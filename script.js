@@ -29,7 +29,7 @@ const songs = [
     source: "songs/Dur Tujhse Me Rehke.mp3",
   },
   {
-    title: "Ankho ki dibiya me nindiya",
+    title: "Ankho ki nindiya",
     source: "songs/Jaise aankho ki nindiya.mp3",
   },
   {
@@ -138,7 +138,9 @@ function searchSongs() {
     document.getElementById('filtered-songs').appendChild(song);
   }
   
-  document.querySelector('.search-div').style.display = 'block';
+  // document.querySelector('.search-div').style.display = 'block';
+  document.querySelector('.search-div').classList.add('block');
+  // document.getElementById("filtered-songs").classList.add('block');
 }
 
 
@@ -148,9 +150,11 @@ function resetSearch() {
   filteredSongs = [];
   // updateCurrentSong();
   document.getElementById("filtered-songs").innerHTML = "";
-  let searchDiv = document.querySelector('.search-div');
-  searchDiv.classList.add('clear');
-  searchDiv.style.display = 'none';
+  // let searchDiv = document.querySelector('.search-div');
+  // searchDiv.classList.add('clear');
+  // searchDiv.style.display = 'none';
+  document.querySelector('.search-div').classList.remove('block');
+  // document.getElementById("filtered-songs").classList.remove('block');
 }
 
 
