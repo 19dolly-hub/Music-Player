@@ -9,10 +9,16 @@
   <body>
     <nav>
       <h2>Music</h2>
-      <div class="search">
-        <input type="text" id="searchBox" placeholder="Search songs by name...">
-        <button id="searchButton"><span id="text-btn">Search</span><span id="icn-btn">🔍</span></button>
-        <button id="resetButton"><span id="text-btn">Clear</span><span id="icn-btn">🔄️</span></button>
+      <div class="right-nav">
+        <div class="search">
+          <input type="text" id="searchBox" placeholder="Search songs by name...">
+          <button id="searchButton"><span id="text-btn">Search</span><span id="icn-btn">🔍</span></button>
+          <button id="resetButton"><span id="text-btn">Clear</span><span id="icn-btn">🔄️</span></button>
+        </div>
+        <div class="search-div"> 
+          <h4>Search Results: </h4>
+          <div id="filtered-songs"></div>
+        </div>
       </div>
     </nav>
 
@@ -38,10 +44,10 @@
           <h4>Songs Playslist: </h4>
           <div id="songs-list"></div>
         </div>
-        <div class="search-div"> 
+        <!-- <div class="search-div"> 
           <h4>Search Results: </h4>
           <div id="filtered-songs"></div>
-        </div>
+        </div> -->
       </div>
     </main>
     <script src="script.js"></script>

@@ -38,6 +38,12 @@ nav h2 {
   display: none;
 }
 
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 main {
   display: flex;
   justify-content: space-evenly;
@@ -94,7 +100,7 @@ nav button {
   padding: 0 20px;
 }
 
-#render-box h4 {
+#render-box h4, nav h4 {
   color: whitesmoke;
   padding-bottom: 6px;
 }
@@ -104,8 +110,9 @@ nav button {
   height: 0;
   transition: height 0.3s linear; 
   position: absolute;
-  right: 5px;
-  top: 46px;
+  /* right: 5px; */
+  /* top: 46px; */
+  top: 70%;
 }
 
 #filtered-songs {
@@ -190,9 +197,9 @@ li:hover {
   nav h2 {
     padding: 15px 0 0 22px;
   }
-  .search-div {
+  /* .search-div {
     top: 90px;
-  }
+  } */
   .controls {
     padding: 10px;
     font-size: small;
