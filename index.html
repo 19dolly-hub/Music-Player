@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short Music | Music Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Music</h2>
+      <div class="search">
+        <input type="text" id="searchBox" placeholder="Search songs by name...">
+        <button id="searchButton"><span id="text-btn">Search</span><span id="icn-btn">🔍</span></button>
+        <button id="resetButton"><span id="text-btn">Clear</span><span id="icn-btn">🔄️</span></button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="player">
+        <div class="display">
+          <p id="songTitle"></p>
+        </div>
+        <div class="controls">
+          <button id="prevButton">Previous</button>
+          <button id="playButton">Play</button>
+          <button id="nextButton">Next</button>
+        </div>
+        <!-- <div class="search">
+          <input type="text" id="searchBox" placeholder="Search songs by name...">
+          <button id="searchButton">Search</button>
+          <button id="resetButton">Reset</button>
+        </div> -->
+      </div>
+
+      <div id="render-box">
+        <div class="songs-div">
+          <h4>Songs Playslist: </h4>
+          <div id="songs-list"></div>
+        </div>
+        <div class="search-div"> 
+          <h4>Search Results: </h4>
+          <div id="filtered-songs"></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
