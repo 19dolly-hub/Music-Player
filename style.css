@@ -170,6 +170,17 @@ li:hover {
   display: none;
 } */
 
+footer {
+  position: absolute;
+  bottom: 0;
+  color: gray;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: small;
+}
+
 
 @media (max-width: 600px) {
   nav {
