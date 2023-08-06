@@ -9,6 +9,14 @@ const songs = [
     source: "songs/Dur Tujhse Me Rehke.mp3",
   },
   {
+    title: "Ore piya",
+    source: "songs/Ore piya.mp3"
+  },
+  {
+    title: "Tujhko hi dulhan",
+    source: "songs/Tuhko hi dulhan.mp3"
+  },
+  {
     title: "Jaise aankho ki nindiya",
     source: "songs/Jaise aankho ki nindiya.mp3",
   },
@@ -29,17 +37,53 @@ const songs = [
     source: "songs/Dur Tujhse Me Rehke.mp3",
   },
   {
+    title: "Mera safar",
+    source: "songs/Mera safar.mp3"
+  },
+  {
     title: "Ankho ki nindiya",
     source: "songs/Jaise aankho ki nindiya.mp3",
+  },
+  {
+    title: "Saazish me shamil",
+    source: "songs/Saazish me shamil.mp3"
   },
   {
     title: "Mashup",
     source: "songs/Remix.mp3",
   },
   {
+    title: "Zindagi ke safar me",
+    source: "songs/Zindagi ke safar me.mp3"
+  },
+  {
+    title: "Tujhko hi dulha",
+    source: "songs/Thujko hi dulha.mp3"
+  },
+  {
     title: "Sheher Gulabi",
     source: "songs/Shaam Gulabi.mp3",
   },
+  {
+    title: "Mera jo safar hai",
+    source: "songs/Mera safar.mp3"
+  },
+  {
+    title: "Tujhko hi (male version)",
+    source: "songs/Tuhko hi dulhan.mp3"
+  },
+  {
+    title: "Guzar jate hain jo",
+    source: "songs/Zindagi ke safar me.mp3"
+  },
+  {
+    title: "Tujhko hi (female version)",
+    source: "songs/Thujko hi dulha.mp3"
+  },
+  {
+    title: "Saazish me shamil",
+    source: "songs/Saazish me shamil.mp3"
+  }
 ];
 
 
