@@ -29,6 +29,13 @@ nav h2 {
   padding: 5px 0;
 }
 
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 0;
+}
+
 .search {
   display: flex;
   gap: 5px;
@@ -38,18 +45,34 @@ nav h2 {
 
 .search input {
   padding: 3px 1px;
+  margin-right: 1px;
 }
 
 #icn-btn {
   display: none;
 }
 
-.right-nav {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 5px 0;
+.search-div {
+  display: none; 
+  height: 0;
+  transition: height 0.3s linear; 
+  position: absolute;
+  top: 70%;
 }
+
+.search-div h4 {
+  color: whitesmoke;
+  padding-bottom: 6px;
+}
+
+#filtered-songs {
+  /* height: 0;
+  transition: height 0.3s linear; */
+  background-color: rgba(0, 0, 0, 0.67);
+  padding: 7px;
+  border-radius: 3px;
+}
+
 
 main {
   display: flex;
@@ -98,8 +121,9 @@ main {
 } 
 
 nav button {
-  margin: 0;
+  margin: 1px;
 }
+
 
 /* render */
 #render-box {
@@ -107,33 +131,9 @@ nav button {
   padding: 0 20px;
 }
 
-#render-box h4, nav h4 {
+#render-box h4 {
   color: whitesmoke;
   padding-bottom: 6px;
-}
-
-.search-div {
-  display: none; 
-  height: 0;
-  transition: height 0.3s linear; 
-  position: absolute;
-  /* right: 5px; */
-  /* top: 46px; */
-  top: 70%;
-}
-
-#filtered-songs {
-  /* height: 0;
-  transition: height 0.3s linear; */
-  background-color: rgba(0, 0, 0, 0.67);
-  padding: 7px;
-  border-radius: 3px;
-}
-
-#btn {
-  background-color: transparent;
-  padding: 0;
-  font-size: medium;
 }
 
 #songs-list {
@@ -153,6 +153,12 @@ li:hover {
   background-color: #00bbff7a;
 }
 
+#btn {
+  background-color: transparent;
+  padding: 0;
+  font-size: medium;
+}
+
 .block {
   display: block;
   height: auto;
@@ -165,45 +171,44 @@ li:hover {
 
 
 @media (max-width: 600px) {
-  main {
-    flex-direction: column;
-    padding: 0;
-    margin: 15px;
-  }
   nav {
     position: sticky;
     top: 0;
-    /* gap: 0; */
-  }
-  #icn-btn {
-    display: inline-block;
   }
   .search button {
     background-color: transparent;
     padding: 0;
     font-size: 18px;
   }
+  #icn-btn {
+    display: inline-block;
+  }
   #text-btn {
     display: none;
   }
-  .controls button {
-    margin: 3px;
-  }
   .search-div h4 {
     text-align: right;
+  }
+  #filtered-songs {
+    background-color: rgba(0, 0, 0, 0.80);
+  }  
+  main {
+    flex-direction: column;
+    padding: 0;
+    margin: 15px;
+  }
+  .controls {
+    padding: 10px;
+    font-size: small;
+  }
+  .controls button {
+    margin: 3px;
   }
   #render-box {
     padding: 10px 0;
     margin: auto 20px;
   }
-  #filtered-songs {
-    background-color: rgba(0, 0, 0, 0.80);
-  }  
   #songs-list {
     max-height: 70vmin;
-  }
-  .controls {
-    padding: 10px;
-    font-size: small;
   }
 }
