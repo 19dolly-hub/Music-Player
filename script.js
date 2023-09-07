@@ -150,7 +150,8 @@ function playPreviousSong() {
 
 
 function searchSongs() {
-  if (searchBox.value != "") {
+  document.getElementById("filtered-songs").innerHTML = "";
+  if (searchBox.value.trim() != "") {
     const searchTerm = searchBox.value.toLowerCase();
     filteredSongs = songs.filter((song) =>
       song.title.toLowerCase().includes(searchTerm)
