@@ -180,6 +180,7 @@ function searchSongs() {
     let song = document.createElement('li');
     song.innerHTML = `<button id="btn" onclick="playCurrentSong(this)">▶️</button> ${filteredSongsObj.title}`;
     song.style.color = "white";
+    song.style.listStyle = "none";
     document.getElementById('filtered-songs').appendChild(song);
   }
   
