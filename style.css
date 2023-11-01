@@ -119,18 +119,19 @@ main {
   /* box-shadow: 10px 5px 7px rgb(0 0 0 / 45%); */
 }
 
-.controls button, nav button {
-  margin: 5px;
+.controls img {
+  width: 2rem;
+  cursor: pointer;
+}
+
+nav button {
+  margin: 1px;
+  cursor: pointer;
   padding: 2px 3px;
   background: linear-gradient(-45deg, black, transparent);
   color: white;
   border-radius: 4px;
 } 
-
-nav button {
-  margin: 1px;
-  cursor: pointer;
-}
 
 
 /* render */

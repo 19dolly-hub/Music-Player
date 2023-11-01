@@ -119,7 +119,7 @@ function updateCurrentSong() {
     songTitleElement.textContent = "";
     audioPlayer.pause();
   }
-  playButton.textContent = "Play";
+  playButton.setAttribute("src", "/icons/play-circle-line.svg");
 }
 
 
@@ -127,10 +127,10 @@ function playSong() {
   const arr = isSearching ? filteredSongs : songs;
   if (arr.length > 0) {
     if (audioPlayer.paused) {
-      playButton.textContent = "Pause";
+      playButton.setAttribute("src", "/icons/pause-circle-line.svg");
       audioPlayer.play();
     } else {
-      playButton.textContent = "Play";
+      playButton.setAttribute("src", "/icons/play-circle-line.svg");
       audioPlayer.pause();
     }
   }
@@ -248,7 +248,7 @@ function playCurrentSong(button) {
   else {
       button.innerText = "▶️";
       audioPlayer.pause();
-      playButton.textContent = "Play";
+      playButton.setAttribute("src", "/icons/play-circle-line.svg");
     }
  }
 
